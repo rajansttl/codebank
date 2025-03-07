@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<link type="text/css" href="css/bootstrap.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="css/all.css">
+<link rel="stylesheet" href="css/fontawesome.css">
+
+<title>Multi Tickers</title>
+
+<style>
+ :root {
+  --sttl-theme-white: #ffffff;
+  --sttl-theme-orange: #F84E33; 
+ }
+/*ticker all */
+.cause-listtitle {
+  font-size: var(--sttl-theme-font-30);
+  color: var(--sttl-theme-gray);
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: 'Noto Serif';
+}
+.allticker { background: url(../images/gause-bg.png) 0 0 no-repeat; padding: 50px 0; background-size: 100%; object-fit: cover; }
+.allticker-inner { background: var(--sttl-theme-white); padding: 50px; border-bottom: 10px solid var(--sttl-theme-yellow); border-radius: 5px 5px 0 0; }
+.cause-listtitle { font-size: var(--sttl-theme-font-30); color: var(--sttl-theme-gray); font-weight: bold; margin-bottom: 20px; font-family: 'Noto Serif'; }
+.gaue-date { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+.gause-inner a { font-size: var(--sttl-theme-font-15); color: var(--sttl-theme-blue); text-decoration: none; font-family: Poppins, Regular; font-weight: 400; }
+.gause-inner span { font-size: var(--sttl-theme-font-15); color: var(--sttl-theme-orange); font-family: Poppins, Regular; font-weight: 400; margin-left: 5px; }
+.gause-list p { font-size: var(--sttl-theme-font-16); color: var(--sttl-theme-gray); font-family: Poppins, Regular; font-weight: 400; line-height: 22px;padding: 0; }
+.gause-list { border-bottom: 1px solid var(--sttl-theme-lightwhite); margin-bottom: 20px; }
+.gause-list:last-child { border-bottom: none; margin-bottom: 0; }
+.allticker-inner ul li { list-style: none; margin: 0; padding: 0; border-bottom: 1px solid var(--sttl-theme-lightwhite); padding-bottom: 20px; margin-bottom: 20px; }
+.allticker-inner ul { margin: 0; padding: 0; }
+.ticker-bottom { position: relative; display: flex;  align-items: center; }
+.latestNewsWrap { position: relative; }
+.newsPlayPause { position: absolute; top: 100%; right: 15px; color: var(--sttl-theme-white); margin-top: 5px; }
+.newsPlayPause.play { background-image: url(images/play-pause-icon.png); background-repeat: no-repeat; background-position: -37px 0px; width: 30px; height: 30px; font-size: 0; }
+.newsPlayPause.stop { background-image: url(images/play-pause-icon.png); background-repeat: no-repeat; width: 30px; height: 30px; font-size: 0; padding: 0; }
+.newsPlayPause:hover { color: var(--sttl-theme-white); }
+.latestNewsWrap ul { list-style: none; padding: 0; margin: 0; }
+.newsItem span { display: inline-block; margin-bottom: 5px; color: var(--sttl-theme-lightgreen); font-size: var(--sttl-theme-font-18); font-weight: 600; }
+.newsItem span .fa{ margin-right: 10px; color: var(--sttl-theme-lightgreen);}
+.newsItem a { color: var(--sttl-theme-gray); text-decoration: none; font-size: var(--sttl-theme-font-18); display: -webkit-box; -webkit-line-clamp: 4; overflow: hidden; -webkit-box-orient: vertical; height: calc(1rem * 5.1); text-overflow: ellipsis; }
+.newsItem a:hover { color: var(--sttl-theme-lightgreen); }
+.latestNewsWrap .tickerDivBlock {  overflow: hidden !important; }
+.latestNewsWrap .tickerDivBlock li { min-height: 140px;min-height: auto;  position: relative; }
+.tickerviewall { font-size: var(--sttl-theme-font-16); color:var(--sttl-theme-orange); text-decoration: none; position: absolute; bottom: -30px; }
+
+@media (max-width:767px){
+  .latestNewsWrap { margin-bottom: 70px; }
+}
+</style>
+
+</head>
+<body>
+
+
+<section class="allticker">
+  <div class="container-xl">
+    <div class="allticker-inner">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="latestNewsWrap">
+               <h2 class="cause-listtitle">CAUSE LIST</h2>
+               <div class="ticker">
+                  <a class="playPause stop newsPlayPause" href="#" title="Pause">Pause</a>
+                  <div class="tickerDivBlock">
+                     <ul class="activityTicker">
+                        <li>
+                          <div class="gause-list">
+                            <div class="gaue-date">
+                              <div class="gause-inner">
+                                <a href="#"><i class="calendar"> <img src="images/calender-icons.png" alt="calender-icons"></i> 24 June 2023</a> <span>Case No - 398</span></div> 
+                              <div class="pdf-gause"><i class="pdf"> <img src="images/pdf.png" alt="pdf"></i></div>
+                            </div>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="gause-list">
+                            <div class="gaue-date">
+                              <div class="gause-inner">
+                                <a href="#"><i class="calendar"> <img src="images/calender-icons.png" alt="calender-icons2"></i> 24 June 2023</a> <span>Case No - 398</span></div> 
+                              <div class="pdf-gause"><i class="pdf"> <img src="images/pdf.png" alt="pdf"></i></div>
+                            </div>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="gause-list">
+                            <div class="gaue-date">
+                              <div class="gause-inner">
+                                <a href="#"><i class="calendar"> <img src="images/calender-icons.png" alt="calender-icons3"></i> 24 June 2023</a> <span>Case No - 398</span></div> 
+                              <div class="pdf-gause"><i class="pdf"> <img src="images/pdf.png" alt="pdf"></i></div>
+                            </div>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                          </div>
+                        </li>                            
+                     </ul>
+                  </div>
+                  <a class="tickerviewall" href="#">View All <i class="fa fa-long-arrow-right"></i></a>              
+               </div>              
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="latestNewsWrap">
+               <h2 class="cause-listtitle">HEARING UPDATES</h2>
+               <div class="ticker">
+                  <a class="playPause stop newsPlayPause" href="#" title="Pause">Pause</a>
+                  <div class="tickerDivBlock">
+                     <ul class="activityTicker">
+                        <li>
+                          <div class="gause-list">
+                            <div class="gaue-date">
+                              <div class="gause-inner">
+                                <a href="#"><i class="calendar"> <img src="images/calender-icons.png" alt="calender-icons4"></i> 24 June 2023</a> <span>Case No - 398</span></div> 
+                              <div class="pdf-gause"><i class="pdf"> <img src="images/pdf.png" alt="pdf"></i></div>
+                            </div>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="gause-list">
+                            <div class="gaue-date">
+                              <div class="gause-inner">
+                                <a href="#"><i class="calendar"> <img src="images/calender-icons.png" alt="calender-icons5"></i> 24 June 2023</a> <span>Case No - 398</span></div> 
+                              <div class="pdf-gause"><i class="pdf"> <img src="images/pdf.png" alt="pdf"></i></div>
+                            </div>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="gause-list">
+                            <div class="gaue-date">
+                              <div class="gause-inner">
+                                <a href="#"><i class="calendar"> <img src="images/calender-icons.png" alt="calender-icons6"></i> 24 June 2023</a> <span>Case No - 398</span></div> 
+                              <div class="pdf-gause"><i class="pdf"> <img src="images/pdf.png" alt="pdf"></i></div>
+                            </div>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                          </div>
+                        </li>                            
+                     </ul>
+                  </div>
+                  <a class="tickerviewall" href="#">View All <i class="fa fa-long-arrow-right"></i></a>              
+               </div>              
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="latestNewsWrap">
+               <h2 class="cause-listtitle">RECENT JUDGEMENTS/ ORDERS</h2>
+               <div class="ticker">
+                  <a class="playPause stop newsPlayPause" href="#" title="Pause">Pause</a>
+                  <div class="tickerDivBlock">
+                     <ul class="activityTicker">
+                        <li>
+                          <div class="gause-list">
+                            <div class="gaue-date">
+                              <div class="gause-inner">
+                                <a href="#"><i class="calendar"> <img src="images/calender-icons.png" alt="calender-icons"></i> 24 June 2023</a> <span>Case No - 398</span></div> 
+                              <div class="pdf-gause"><i class="pdf"> <img src="images/pdf.png" alt="pdf"></i></div>
+                            </div>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="gause-list">
+                            <div class="gaue-date">
+                              <div class="gause-inner">
+                                <a href="#"><i class="calendar"> <img src="images/calender-icons.png" alt="calender-icons"></i> 24 June 2023</a> <span>Case No - 398</span></div> 
+                              <div class="pdf-gause"><i class="pdf"> <img src="images/pdf.png" alt="pdf"></i></div>
+                            </div>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="gause-list">
+                            <div class="gaue-date">
+                              <div class="gause-inner">
+                                <a href="#"><i class="calendar"> <img src="images/calender-icons.png" alt="calender-icons"></i> 24 June 2023</a> <span>Case No - 398</span></div> 
+                              <div class="pdf-gause"><i class="pdf"> <img src="images/pdf.png" alt="pdf"></i></div>
+                            </div>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                          </div>
+                        </li>                            
+                     </ul>
+                  </div>
+                  <a class="tickerviewall" href="#">View All <i class="fa fa-long-arrow-right"></i></a>              
+               </div>              
+            </div>
+          </div>
+        </div>
+    </div>    
+  </div>
+</section>
+
+<script type="text/javascript" src="js/jquery-3.6.3.js"></script>
+<script type="text/javascript" src="js/jquery-migrate-1.4.1.min.js"></script>
+
+<script src="js/multiTickers.js"></script>
+<script>
+  $(document).ready(function(){
+  // Multiple Ticker 1	
+  if( $(".ticker").length){
+			$('.ticker').each(function(i){
+				$(this).addClass('tickerDiv'+i).attr('id', 'ticker'+i);
+				$('#ticker'+i).find('.tickerDivBlock').first().addClass('newsTikker'+i).attr('id', 'newsTikker'+i);
+				$('#ticker'+i).find('a.playPause').attr('id', 'stopNews'+i)
+				$('#newsTikker'+i).vTicker({ speed: 1E3, pause: 4E3, animation: "fade", mousePause: false, showItems: 3, height: 460, direction: 'up' })
+				$("#stopNews"+i).click(function () {
+					if($(this).hasClass('stop')){
+						$(this).removeClass("stop").addClass("play").text("Play").attr('title', 'Play');
+					}else{
+						$(this).removeClass("play").addClass("stop").text("Pause").attr('title', 'pause');
+					}
+					return false;
+				});
+			});
+		};
+  });
+
+</script>
+
+</body>
+</html>
