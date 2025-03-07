@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<link type="text/css" href="css/bootstrap.css" rel="stylesheet">
+
+<link href="css/swiper.css" rel="stylesheet" />
+
+<link rel="stylesheet" href="css/all.css">
+<link rel="stylesheet" href="css/fontawesome.css">
+
+<title>Banner1</title>
+<style>
+  :root {
+    --sttl-theme-lightblue: #f5f8fc;
+    --sttl-theme-gray: #6c757d;
+    --sttl-theme-font-15: 15px;
+    --sttl-theme-font-16: 16px;
+    --sttl-theme-font-20: 20px;
+  }
+  .swiper-container {
+  overflow: hidden;
+}
+  /**********Home Banner**********/
+.banner-section { background: var(--sttl-theme-lightblue); display: flex; height: 100%; overflow: hidden; position: relative; }
+.homeBanner { position: relative; z-index: 0; width: calc(71vw - 0px); margin-left: calc(-71vw + 65vw); }
+.homeBanner .homeBannerImgWrap img { visibility: hidden; opacity: 0; width: 100%; }
+.homeBanner .homeBannerImgWrap { height: 530px; overflow: hidden; background-position: right center; background-size: cover; background-repeat: no-repeat; }
+.homeBanner .sliderCaptionWrap { position: absolute; left: 0; width: 100%; top: 50%; transform: translateY(-50%); -webkit-transform: translateY(-50%); }
+.paginationWrap { position: absolute; z-index: 1; top: 50%; transform: translateY(-50%); display: flex; align-items: center; justify-content: space-between; right: 0; padding: 0 40px; }
+.paginationWrap .slider__controls { z-index: 1; top: 50%; transform: translateY(-50%); position: absolute; width: 84%; }
+.homeBanner .paginationWrap .slider__button-next, .homeBanner .paginationWrap .slider__button-prev { position: absolute; right: 20px; height: 40px; width: 40px; border-radius: 30px; background-size: 40px; background-position: center center; }
+.homeBanner .paginationWrap .slider__button-prev { background: url(images/homeBannerPrev.png) center center no-repeat; }
+.homeBanner .paginationWrap .slider__button-next { background: url(images/homeBannerNext.png) center center no-repeat; margin-top: -100px; }
+.bannerRight .researchbox { text-align: center; }
+.honorable { font-size: var(--sttl-theme-font-20); color: var(--sttl-theme-gray); font-weight: 600; text-align: center; margin: 15px 0; }
+.bannerRight .researchbox h4 { font-size: var(--sttl-theme-font-16); font-weight: 600; color: var(--sttl-theme-gray); margin-top: 10px; }
+.bannerRight .researchbox p { font-size: var(--sttl-theme-font-15); color: var(--sttl-theme-gray); font-weight: 400; }
+.bannerRight {  max-width:400px; }
+
+
+@media only screen and (max-width: 991px) {
+.homeBanner { width: calc(100vw - -7px); margin-left: calc(-100vw + 98vw); }
+section.about-home-wrap .nationalImg { display: flex;justify-content: space-around; margin-top: 30px; }
+.banner-right .nationalImg { display: flex; justify-content: space-around; }
+
+
+
+.bannerRight  { max-width:100%;}
+.nationalImg { display:flex;}
+.bannerRight .researchbox { width:33%;}
+}
+
+@media only screen and (max-width: 767px) {
+.nationalImg { flex-wrap:wrap;}
+.bannerRight .researchbox { width:100%;}
+}
+</style>
+</head>
+<body>
+
+<section class="banner-section">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-8 ">
+        <div id="homeBanner" class="homeBanner">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                      <div class="homeBannerImgWrap">
+                         <img src="images/banner-img.png" alt="banner-bg">
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <div class="homeBannerImgWrap">
+                         <img src="images/banner-img.png" alt="banner-bg">
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <div class="homeBannerImgWrap">
+                         <img src="images/banner-img.png" alt="banner-bg">
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <div class="homeBannerImgWrap">
+                         <img src="images/banner-img.png" alt="banner-bg">
+                      </div>
+                   
+                  </div>
+                </div>
+            </div>
+            <div class="paginationWrap">
+              <div class="container">
+                <div class="paginationWrap">
+                  <div class="sliderPrev slider__button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="false"> <span class="left"></span> </div>
+                    <div class="sliderNext slider__button-next swiper-button-disabled" tabindex="0" role="button" aria-label="Next slide" aria-disabled="true"> <span class="right"></span>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>        
+      </div>
+      <div class="col-lg-4">
+        <div class="bannerRight">
+          <div class="honorable">HONORABLE MINISTERS</div>
+          <div class="nationalImg">            
+            <div class="researchbox"> <img src="images/sarbananda.png" alt="about">
+              <h4>SHRI SARBANANDA SONOWAL</h4>
+              <p>Hon'ble Cabinet Minister</p>                
+            </div>
+            <div class="researchbox"> <img src="images/shripad.png" alt="about">
+              <h4>SHRI SHRIPAD NAIK</h4>
+              <p>Hon'ble Minister of State</p>               
+            </div>
+            <div class="researchbox"> <img src="images/shanatanu.png" alt="about">
+              <h4>SHRI SHANTANU THAKUR</h4>
+              <p>Hon'ble Minister of State</p>              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<script type="text/javascript" src="js/jquery-3.6.3.js"></script>
+<script type="text/javascript" src="js/jquery-migrate-1.4.1.min.js"></script>
+
+
+
+<script src="js/swiper.js"></script>
+<script >
+  $(document).ready(function() {
+    //Home Slider
+	if($(".homeBanner").length){
+		var homeSlider = new Swiper('.homeBanner .swiper-container', {
+			spaceBetween: 0,
+				speed: 2000,
+				loop: true,
+				keyboard: true,
+				// effect: 'fade',		
+				//parallax:true,
+				autoplay: {
+					delay: 5000,
+					disableOnInteraction: false,
+				},
+				pagination: false,
+				navigation: {
+					nextEl: '.homeBanner .slider__button-next',
+					prevEl: '.homeBanner .slider__button-prev',
+				},
+			});
+		$(".swiper-button-pause").toggle(function() {
+			$(this).addClass('play');
+			homeSlider.autoplay.stop();
+		}, function() {
+			$(this).removeClass('play');
+			homeSlider.autoplay.start();
+			return false;
+		});
+	}
+	
+	if($(".homeBanner").length){
+		$(".homeBannerImgWrap").each(function(){
+			var imagePath = $(this).find("img").attr("src");
+			$(this).css("background-image","url( "+ imagePath +" )");
+		});
+	}
+  });
+
+
+</script>
+
+</body>
+</html>
