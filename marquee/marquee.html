@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<link type="text/css" href="css/bootstrap.css" rel="stylesheet">
+<link type="text/css" href="css/all.css" rel="stylesheet">
+<link type="text/css" href="css/fontawesome.css" rel="stylesheet">
+<script src="js/jquery-3.6.3.js"></script>
+<style>
+ :root {
+	--sttl-theme-blue: #0082CE;
+  --sttl-theme-white: #ffffff; 
+  }
+  .marqueeContainer { box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1); padding: 20px 0; background:var(--sttl-theme-blue); }
+
+  .marqueeScrollingWrap .heading4 {
+  font-family: 'Noto Serif';
+  position: absolute;
+  left: 0;
+  top: -3px;
+  border-right: 1px solid var(--sttl-theme-white);
+  padding-right: 70px;
+  color: var(--sttl-theme-white);
+  font-size: var(--sttl-theme-font-24);
+  font-weight: bold;
+}
+.marqueeContainer .container-xl {
+  position: relative;
+
+}
+.marqueeScrollingWrap .btnMPause {
+  position: absolute;
+  top: 0;
+  font-weight: 500;
+  left: 130px;
+  font-size: var(--sttl-theme-font-24);
+  line-height: 1;
+}
+.marqueeScrolling a {
+  color: var(--sttl-theme-white);
+}
+.marqueeScrollingWrap {
+  position: relative;
+  padding-left: 200px;
+}
+.marqueeScrolling li {
+  position: relative;
+  float: left;
+  margin-right: 25px;
+  color: var(--sttl-theme-white);
+}
+
+.marqueeScrollingWrap ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 25px;
+}
+.marquee {
+  overflow: hidden;
+}
+.marqueeScrollingWrap .redLink {
+  float: right;
+  margin-left: 10px;
+}
+.marqueeScrolling a {
+  color: var(--sttl-theme-white);
+}
+.btnMPause {
+    display: inline-block !important;
+}
+</style>
+
+
+
+<title>Marquee</title>
+
+</head>
+<body>
+
+
+<div class="marqueeContainer mb-5">
+  <div class="container-xl">
+    <div class="marqueeScrollingWrap">
+      <h3 class="heading4">Updates</h3>
+      <div class="marqueeScrolling cf">
+         <a class="btnMPause alignRight" href=""> <i class="fa-solid fa-pause"></i> </a>
+        <div class="viewAll"> <a href="#" class="redLink">View All <i class="fa-solid fa-arrow-right"></i></a> </div>
+        <ul id="js_Notification" class="marquee cf">
+          <li><span class="redCol">Satara - </span> SMO&MO,ART on Contract at ART center Satara Walk-in-interview on 5th Dec 2022. </li>
+          <li><span class="redCol">Solapur -</span> Technical... Officer Vacancy at GMC Solapur last date-21/11/2019</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function(){
+    $(".btnMPause").show(); 
+    if( $(".marqueeScrolling li").length > 1){
+			var $mq = $('.marquee').marquee({
+				 speed: 25000
+				,gap: 0
+				,duplicated: true
+				,pauseOnHover: true
+				});
+			$(".btnMPause").toggle(function(){
+				$(this).addClass('play');				
+				$mq.marquee('pause');
+			},function(){
+				$(this).removeClass('play');
+				$mq.marquee('resume');
+				return false;
+			});
+     
+		};
+
+
+  });
+  		 
+</script>
+<script src="js/marquee.js"></script>
+
+</body>
+</html>
