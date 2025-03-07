@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="images/favicon.ico">
+<!-- Bootstrap CSS -->
+<link type="text/css" href="css/bootstrap.css" rel="stylesheet">
+<!-- fontawesome CSS -->
+<link rel="stylesheet" href="css/all.css">
+<link rel="stylesheet" href="css/fontawesome.css">
+
+<link href="css/swiper.css" rel="stylesheet" />
+
+
+<script type="text/javascript" src="js/jquery-3.6.3.js"></script>
+<style>
+  :root{
+    --sttl-theme-font-30:1.875em; 
+  }
+  /*home media section*/
+.media { background-color: var(--sttl-theme-white); }
+.innerSecPadd { padding:50px 0 0; }
+.title1 { font-family: 'Noto Serif', serif; font-size: var(--sttl-theme-font-30); font-weight: 600; color: var(--sttl-theme-gray); font-weight: 700; }
+.mediaHeader { display: flex; justify-content: space-between; }
+.media .resTab .tabNav li { padding: 0 5px; font-size:var(--sttl-theme-font-20); }
+.media .resTab .tabNav li a { outline: none; }
+.resTab .tabNav .r-tabs-state-active a .bi-twitter { color:var(--sttl-theme-lightblue); }
+.resTab .tabNav .r-tabs-state-active a .bi-facebook { color:var(--sttl-theme-lightblue); }
+.resTab .tabNav .r-tabs-state-active a .bi-instagram { color:var(--sttl-theme-orange); }
+.resTab .tabNav .r-tabs-state-active a .bi-linkedin { color:var(--sttl-theme-blue); }
+.resTab .tabNav .r-tabs-state-active a .bi-youtube { color:var(--sttl-theme-orange); }
+.media .resTab .tabNav li.r-tabs-state-active  img { filter: invert(44%) sepia(46%) saturate(6030%) hue-rotate(344deg) brightness(105%) contrast(95%); }
+.media .resTab .tabNav li:not(:last-child) { border:0px; }
+.media .resTab { display: flex; flex-wrap: wrap; }
+.media .tabNav {  width: max-content; margin:0 auto; } 
+.media .resTab .r-tabs-panel.r-tabs-state-active { display: block!important; }
+.media .tabContainer { width: 100%; }
+.media .tabContent { padding: 15px!important; display: none; }
+.boxShadow { box-shadow:  0 0 10px rgba(0,0,0,0.1); border-radius: 6px; padding: 15px; }
+.photo { border-radius:6px; }
+.media .photo img { width:100%; max-width:100%!important; }
+.media .photo { height:250px; overflow:hidden; }
+.blueCol{ color:var(--sttl-theme-blue); overflow: hidden; }
+.smallFont { font-size:var(--sttl-theme-font-15) }
+.viewAllLink{ color:var(--sttl-theme-orange); text-decoration:none; }
+.sliderCont { position:relative; }
+.sliderCont .swiper-button-next, 
+.sliderCont .swiper-button-prev{ background-image:none;  height:30px; margin:0; top:-3px;  filter: grayscale(100%); }
+.sliderCont .swiper-button-next:after, 
+.sliderCont .swiper-button-prev:after { font-size: 14px;}
+.sliderCont .swiper-button-next { right:0px; left:auto; }
+.sliderCont .swiper-button-prev { right:30px; left:auto; }
+.media .boxShadow { height:450px; }
+.media .tabContent img { width:100%; max-width:350px; }
+.media .resTab .r-tabs-panel.r-tabs-state-active {
+  display: block !important;
+}
+
+.resTab { position: relative; }
+.resTab .tabNav {  padding: 0; list-style:none }
+.resTab .tabNav li { display: inline-block;margin: 0;position: relative; padding: 0 15px; }
+.resTab .tabNav li:not(:last-child){ border-right: 1px solid var(--sttl-theme-lightgray); }
+.resTab .tabNav li a { display: inline-block; text-decoration: none; color: var(--sttl-theme-lightgray); }
+.resTab .tabNav .r-tabs-state-active a { color: var(--sttl-theme-black);text-shadow: none; font-weight: bold; }
+.resTab .tabContent, .r-tabs-state-active.tabContent { overflow: auto; }
+.resTab .r-tabs-panel.r-tabs-state-active { display: block; }
+.resTab .r-tabs-accordion-title { display:none; }
+.resTab .tabNav .r-tabs-state-disabled { opacity: 0.5; }
+.resTab .r-tabs-accordion-title .r-tabs-anchor {  border:1px solid var(--sttl-theme-orange); border-radius: 6px; padding:0 15px; display: block;padding: 10px;background-color: var(--sttl-theme-black);color: var(--sttl-theme-white);font-weight: bold;text-decoration: none;margin-bottom: 20px; }
+.resTab .r-tabs-accordion-title.r-tabs-state-active .r-tabs-anchor { background-color: var(--sttl-theme-black);color: var(--sttl-theme-white);text-shadow: none; }
+.resTab .r-tabs-accordion-title.r-tabs-state-disabled { opacity: 0.5; }
+.resTab .r-tabs-accordion-title .r-tabs-anchor { border: 1px solid var(--sttl-theme-lightgray);background-color: var(--sttl-theme-lightwhite);color: var(--sttl-theme-gray); }
+.resTab .r-tabs-accordion-title.r-tabs-state-active .r-tabs-anchor{ background-color: var(--sttl-theme-orange); }
+.noJS .resTab .tabContainer { height:150px; overflow:hidden }
+.noJS .resTab .tabContent { display:block; height:150px }
+
+
+.sliderCont {
+  position: relative;
+}
+.sliderCont .swiper-button-next {
+  right: 0px;
+  left: auto;
+}
+
+.title1 {
+  font-family: 'Noto Serif', serif;
+  font-size: var(--sttl-theme-font-30);
+  font-weight: 600;
+  color: var(--sttl-theme-gray);
+  font-weight: 700;
+  margin:0px;
+}
+.boxShadow {
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 6px;
+  padding: 15px;
+}
+
+
+
+@media only screen and (max-width: 991px) {
+  .mediaCover {
+    max-width: 400px;
+    margin: 0px auto 20px;
+  }
+}
+
+</style>
+
+<title>MAJOR PORTS ADJUDICATORY BOARD</title>
+
+</head>
+<body>
+
+  <!--media-->
+<section class="media innerSecPadd">
+  <div class="container-xl">
+    <div class="row">
+      <div class="col-lg-4 mb-md-3">
+       <div class="mediaCover">
+        <div class="resTab">
+          <h2 class="title1">MEDIA GALLERY</h2>
+          <ul class="tabNav">
+            <li><a href="#photoGallery"><img src="images/media-photo-icon.png" alt="photo gallery"></a></li>
+            <li><a href="#videoGallery"><img src="images/media-video-icon.png" alt="media gall"></a></li>
+          </ul>
+          <div class="tabContainer mt-3">
+            <div id="photoGallery" class="tabContent boxShadow">
+              <div class="swiper homePhotosSlider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="photo mb-2"> <img src="images/photoGallery-1.png" alt="Photo Gallery"> </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <p class="blueCol smallFont m-0 p-0"> <i class="bi bi-calendar3"></i> 24 June 2023</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <p>Celebrating its Iconic Week under new Azadi Ka Amrit Mahotsav 30 April 2022 to 6 May 2022 with all members at hall</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="photo mb-2"> <img src="images/photoGallery-1.png" alt="Photo Gallery"> </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <p class="blueCol smallFont m-0 p-0"> <i class="bi bi-calendar3"></i> 24 June 2023</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <p>Celebrating its Iconic Week under new Azadi Ka Amrit Mahotsav 30 April 2022 to 6 May 2022 with all members at hall</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sliderCont">
+                  <div class="row">
+                    <div class="col-md-6"><a href="#" class="viewAllLink">View All <span class="bi bi-arrow-right"></span></a></div>
+                    <div class="col-md-6">
+                      <div class="swiper-button-next homePhotosSlider-next">
+                  
+                      </div>
+                      <div class="swiper-button-prev  homePhotosSlider-prev">
+                    
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="videoGallery" class="tabContent boxShadow">
+              <div class="swiper homeVideosSlider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="photo mb-2"> <img src="images/videoGallery-1.png" alt="Video Gallery"> </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <p class="blueCol smallFont m-0 p-0"> <i class="bi bi-calendar3"></i> 24 June 2023</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <p>Celebrating its Iconic Week under new Azadi Ka Amrit Mahotsav 30 April 2022 to 6 May 2022 with all members at hall</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="photo mb-2"> <img src="images/videoGallery-1.png" alt="Video Gallery"> </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <p class="blueCol smallFont m-0 p-0"> <i class="bi bi-calendar3"></i> 24 June 2023</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <p>Celebrating its Iconic Week under new Azadi Ka Amrit Mahotsav 30 April 2022 to 6 May 2022 with all members at hall</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sliderCont">
+                  <div class="row">
+                    <div class="col-md-6"><a href="#" class="viewAllLink">View All <span class="bi bi-arrow-right"></span></a></div>
+                    <div class="col-md-6">
+                      <div class="swiper-button-next homeVideosSlider-next"></div>
+                      <div class="swiper-button-prev  homeVideosSlider-prev"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-md-3">
+      <div class="mediaCover">
+        <h2 class="title1">EVENTS</h2>
+        <div class="boxShadow mt-3">
+          <div class="swiper homeEventsSlider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="photo mb-2"> <img src="images/home-event-image-1.png" alt="events"> </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <p class="blueCol smallFont m-0 p-0"> <i class="bi bi-calendar3"></i> 24 June 2023</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <p>Celebrating its Iconic Week under new Azadi Ka Amrit Mahotsav 30 April 2022 to 6 May 2022 with all members at hall</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="photo mb-2"> <img src="images/home-event-image-1.png" alt="events"> </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <p class="blueCol smallFont m-0 p-0"> <i class="bi bi-calendar3"></i> 24 June 2023</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <p>Celebrating its Iconic Week under new Azadi Ka Amrit Mahotsav 30 April 2022 to 6 May 2022 with all members at hall</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sliderCont">
+              <div class="row">
+                <div class="col-md-6"><a href="#" class="viewAllLink">View All <span class="bi bi-arrow-right"></span></a></div>
+                <div class="col-md-6">
+                  <div class="swiper-button-next homeEventsSlider-next"></div>
+                  <div class="swiper-button-prev  homeEventsSlider-prev"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+      <div class="mediaCover">
+        <div class="resTab ">
+          <h2 class="title1">SOCIAL FEEDS</h2>
+          <ul class="tabNav">
+            <li><a href="#twitterTab"><span class="bi bi-twitter"></span></a></li>
+            <li><a href="#facebokTab"><span class="bi bi-facebook"></span></a></li>
+             <li><a href="#instagramTab"><span class="bi bi-instagram"></span></a></li>
+              <li><a href="#linkedInTab"><span class="bi bi-linkedin"></span></a></li>
+              <li><a href="#youtubeTab"><span class="bi bi-youtube"></span></a></li>
+          </ul>
+          <div class="tabContainer mt-3">
+            <div id="twitterTab" class="tabContent boxShadow"> <img src="images/social-plugin-1.png" alt="social "> </div>
+            <div id="facebokTab" class="tabContent boxShadow"> <img src="images/social-plugin-1.png" alt="social "> </div>
+            <div id="instagramTab" class="tabContent boxShadow"> <img src="images/social-plugin-1.png" alt="social "> </div>
+            <div id="linkedInTab" class="tabContent boxShadow"> <img src="images/social-plugin-1.png" alt="social "> </div>
+            <div id="youtubeTab" class="tabContent boxShadow"> <img src="images/social-plugin-1.png" alt="social "> </div>
+   
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="js/responsiveTabs.js"></script>
+<script src="js/swiper.js"></script>
+<script>
+  $(document).ready(function(){
+
+    // Responsive Tabing Script
+	if( $(".resTab").length) { 
+		$('.resTab').responsiveTabs({
+			 rotate: false
+			,startCollapsed: 'tab' //accordion
+			,collapsible: 'accordion' //accordion
+			,scrollToAccordion: true
+			,scrollToAccordionOnLoad:false
+		});
+	};
+
+    if( $(".homePhotosSlider") ){
+	var homePhotosSlider = new Swiper(".homePhotosSlider", {
+	slidesPerView:1,
+	navigation: { 	nextEl: ".homePhotosSlider-next", 	prevEl: ".homePhotosSlider-prev", 	  },
+	spaceBetween: 0,							
+					freeMode: true,							
+						breakpoints: {
+							0: { slidesPerView: 1},
+								640: { slidesPerView: 1	},
+								768: { slidesPerView: 1 },
+								1199: {slidesPerView: 1 },  },
+		  });	 }
+
+
+      if( $(".homeEventsSlider") ){
+	var homeEventsSlider = new Swiper(".homeEventsSlider", {
+	slidesPerView:1,
+	navigation: { 	nextEl: ".homeEventsSlider-next", 	prevEl: ".homeEventsSlider-prev", 	  },
+	spaceBetween: 0,							
+					freeMode: true,							
+						breakpoints: {
+							0: { slidesPerView: 1},
+								640: { slidesPerView: 1	},
+								768: { slidesPerView: 1 },
+								1199: {slidesPerView: 1 },  },
+		  });	 }
+
+  });
+</script>
+</body>
+</html>

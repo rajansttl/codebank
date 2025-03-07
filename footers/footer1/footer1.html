@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<link type="text/css" href="css/bootstrap.css" rel="stylesheet">
+
+<!--font awesome start-->
+<link rel="stylesheet" href="css/all.css">
+<link rel="stylesheet" href="css/fontawesome.css">
+
+<title>MAJOR PORTS ADJUDICATORY BOARD</title>
+
+
+
+<script type="text/javascript" src="js/jquery-3.6.3.js"></script>
+
+<style>
+ :root { 
+  --sttl-theme-yellow: #FEB834; 
+  --sttl-theme-blue: #0082CE;
+  --sttl-theme-white: #ffffff;  
+  --sttl-theme-lightblue: #E2F6FF;
+  --sttl-theme-lightwhite:#f7f7f7;
+  --sttl-theme-black: #000;
+ }
+.footerSectionWrap {
+  background: var(--sttl-theme-blue);
+  padding: 40px 0 20px;
+}.contactDetail {
+  margin: 15px 0;
+}.contactDetail p {
+  padding: 0 80px;
+  margin-bottom: 5px;
+  color: var(--sttl-theme-white);
+}
+
+.footerQuickLinksWrap h4 {
+  color: var(--sttl-theme-white);
+  font-weight: 600;
+  font-size: var(--sttl-theme-font-24);
+  margin-bottom: 20px;
+  padding: 0;
+  font-family: 'Poppins';
+}
+
+
+ul.footerQuickLinks {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+ul.footerQuickLinks li {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  padding: 0 0 0 20px;
+  margin: 0 0 10px;
+}
+ul.footerQuickLinks li a {
+  color: var(--sttl-theme-white);
+  text-decoration: none;
+  line-height: normal;
+  transition: all 0.3s ease-out;
+  font-size: var(--sttl-theme-font-16);
+  font-family: 'Poppins';
+  font-weight: 400;
+  word-break:break-word ;
+  overflow-wrap: break-word  ;
+}
+ul.footerQuickLinks li::before {
+  content: "\f105";
+  font-family: 'FontAwesome';
+  font-weight: 400;
+  position: absolute;
+  left: 0;
+  top: 3px;
+  font-size: var(--sttl-theme-font-16);
+  color: var(--sttl-theme-white);
+  line-height: normal;
+  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.copyRightText {
+  font-size: var(--sttl-theme-font-14);
+  color: var(--sttl-theme-white);
+  margin: 0;
+  padding: 0;
+}
+.footer {
+  border-bottom: 10px solid var(--sttl-theme-yellow);
+  background: var(--sttl-theme-blue);
+  padding: 0 0 20px 0;
+}
+.footer-inner {
+  border-bottom: 2px solid var(--sttl-theme-lightblue);
+  padding-bottom: 20px;
+}
+.visitorLastUpdate p {
+  font-size: var(--sttl-theme-font-14);
+  color: var(--sttl-theme-white);
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+ul.footerQuickLinks li:hover::before {
+  left: 5px;
+  color: var(--sttl-theme-lightwhite);
+}
+
+
+#backtotop {
+  box-shadow: 0 5px var(--sttl-theme-font-16) rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+
+  height: 44px;
+  overflow: hidden;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  width: 44px;
+  z-index: 999;
+}
+
+#backtotop > span {
+  position: relative;
+  display: block;
+  width: 44px;
+  height: 44px;
+  line-height: 42px;
+  font-size: var(--sttl-theme-font-22);
+  text-align: center;
+  color: var(--sttl-theme-white);
+  background-color: var(--sttl-theme-black);
+  -webkit-transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out;
+  -moz-transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out;
+  transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out;
+  overflow: hidden;
+}
+
+.backTop {
+  color: transparent;
+  height: 46px;
+  width: 44px;
+  top: 0;
+  position: absolute;
+  right: 0px;
+  bottom: 0;
+  z-index: 999;
+  opacity: 0;
+}
+#backtotop span em {
+  background: #f84e33 url(images/backtotop.png) no-repeat scroll center center;
+  font-weight: bold;
+  display: block;
+  width: 44px;
+  height: 44px;
+  -webkit-transition: .15s ease 50ms;
+  -moz-transition: .15s ease 50ms;
+  transition: .15s ease 50ms;
+  text-indent: -9999px;
+}
+#backtotop > span::after {
+  content: 'TOP';
+  position: absolute;
+  top: 150%;
+  left: 52%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: .45s cubic-bezier(.54, .13, 0, 1.43);
+  -moz-transition: .45s cubic-bezier(.54, .13, 0, 1.43);
+  transition: .45s cubic-bezier(.54, .13, 0, 1.43);
+  font-size: var(--sttl-theme-font-12);
+  font-weight: bold;
+}
+
+#backtotop > span:hover em {
+  -webkit-transform: translateY(-50px);
+  -moz-transform: translateY(-50px);
+  transform: translateY(-50px);
+  -webkit-transition: .15s ease;
+  -moz-transition: .15s ease;
+  transition: .15s ease;
+}
+
+#backtotop > span:hover::after {
+  top: 50%;
+}
+</style>
+
+</head>
+<body>
+
+
+
+<section class="footer">
+  <div class="footerSectionWrap">
+    <div class="container-xl">
+      <div class="footer-inner">
+        <div class="row">
+          <div class="col-xl-5">
+            <div class="footerlogo">
+              <div class="imgHolder"><img src="images/footer-logo.png" alt="logo" /></div>
+              <div class="contactDetail">
+                <p>4th Floor, Bhandar Bhavan, Muzawar Pakhadi Road, Mazgaon, Maharashtra, Mumbai – 400010</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-7">
+            <div class="footerQuickLinksWrap">
+              <div class="row">
+                <div class="col-md-4">
+                  <h4>IMPORTANT LINKS</h4>
+                  <ul class="footerQuickLinks">
+                    <li><a href="#" title="www.tariffauthority.gov.in">www.tariffauthority.gov.in</a></li>
+                    <li><a href="#" title="e-filing">e-filing</a></li>
+                    <li><a href="#" title="FAQ's">FAQ's</a></li>
+                    <li><a href="#" title="CPGRAMS">CPGRAMS</a></li>
+                    <li><a href="#" title="Downloads">Downloads</a></li>
+                    <li><a href="#" title="Links to other websites">Links to other websites</a></li>
+                    <li><a href="#" title="Complaints">Complaints</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <h4>RELATED LINKS</h4>
+                  <ul class="footerQuickLinks">
+                    <li><a href="#" title="Citizen Charter">Citizen Charter</a></li>
+                    <li><a href="#" title="Accessibility menu">Accessibility menu</a></li>
+                    <li><a href="#" title="Career">Career</a></li>
+                    <li><a href="#" title="RTI">RTI</a></li>
+                    <li><a href="#" title="Holiday List">Holiday List</a></li>
+                    <li><a href="#" title="Site Map">Site Map</a></li>
+                    <li><a href="#" title="Feedback">Feedback</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <h4>OTHER LINKS</h4>
+                  <ul class="footerQuickLinks mb-0">
+                    <li><a href="#" title="Help">Help</a></li>
+                    <li><a href="#" title="Privacy Policy">Privacy Policy</a></li>
+                    <li><a href="#" title="Hyperlinking Policy">Hyperlinking Policy</a></li>
+                    <li><a href="#" title="Copyright Policy">Copyright Policy</a></li>
+                    <li><a href="#" title="Terms & Conditions">Terms & Conditions</a></li>
+                    <li><a href="#" title="Disclaimer">Disclaimer</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-xl">
+    <div class="row">
+      <div class="col-md-7">
+          <p class="copyRightText">Copyright © 2023 Major Ports Adjudicatory Board, Government of India. All rights reserved</p>
+      </div>
+      <div class="col-md-5">
+        <div class="visitorLastUpdate">
+          <p>Last Updated: 07 July 2023 <span>Visitors: 5,60,730</span></p>          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<a href="#wrapper" title="Back to top" id="backtotop"><span class="backtopBtn"><span class="backTop">Back to top</span><em> Back to top</em></span></a>
+
+
+<script>
+  	// Back to Top function
+  $(document).ready( function(){ 
+
+
+        if( $("#backtotop").length){
+          $(window).scroll(function(){
+            if ($(window).scrollTop()>120){
+            $('#backtotop').fadeIn('250').css('display','block');}
+            else {
+            $('#backtotop').fadeOut('250');}
+          });
+          $('#backtotop').click(function(){
+            $('html, body').animate({scrollTop:0}, '200');
+            return false;
+          });
+        };
+
+});
+</script>
+
+</body>
+</html>

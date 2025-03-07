@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<link type="text/css" href="css/bootstrap.css" rel="stylesheet">
+
+<!--font awesome css files  starts-->
+<link type="text/css" href="css/fontawesome.css" rel="stylesheet">
+<link type="text/css" href="css/all.css" rel="stylesheet">
+<!--font awesome css files  end-->
+
+<script type="text/javascript" src="js/jquery-3.6.3.js"></script>
+
+<style>
+:root { 
+	--sttl-theme-yellow: #FEB834; 
+  --sttl-theme-orange: #F84E33; 
+  --sttl-theme-white: #ffffff; 
+  --sttl-theme-black: #000;
+  --sttl-theme-lightgray: #e1e1e1;
+}
+img {
+  border: 0;  vertical-align: middle;  max-width: 100%;  height: auto;
+}
+.topStrip { background:var(--sttl-theme-yellow); padding: 5px; }
+.topStrip ul { list-style: none; padding: 0px; margin: 0 -15px; }
+.topStrip ul li { display: inline-block; vertical-align: top; position: relative; padding: 0 15px; }
+.topStrip ul li:before { content: ""; position: absolute; right: -3px; top: 50%; width: 1px; height: 15px; background: var(--sttl-theme-black); transform: translateY(-50%); }
+.topStrip ul li:last-child:before { display: none; }
+.topStrip ul li a { color: var(--sttl-theme-black); text-decoration: none; font-size: var(--sttl-theme-font-13); transition: all 0.3s; position: relative; font-family: 'Poppins'; font-weight: 400; }
+.topStrip ul li a:focus { outline: thin; }
+.topStrip ul li a:before { content: ""; position: absolute; left: 50%; bottom: 0; width: 0; height: 1px; background-color: var(--sttl-theme-black); transition: all 0.3s; transform: translateX(-50%); }
+.topStrip ul li a:hover:before { width: 100%; }
+
+#accessControl { display: flex; align-items: center; }
+#accessControl input { float: left; flex-shrink: 0; background: none; border: none; padding: 0; color: var(--sttl-theme-white); margin: 0 5px; }
+#accessControl input:hover { outline: thin solid var(--sttl-theme-black); }
+#accessControl .contrastChanger { background-color: var(--sttl-theme-white); width: 10px; height: 10px; display: block; line-height: 10px; border-radius: 50px; margin-left: 10px; }
+#accessControl .contrastChanger.wob { background-color: var(--sttl-theme-black); color: var(--sttl-theme-black); }
+#accessControl .fontResizeInfo input{ color: var(--sttl-theme-black); }
+
+.language select { appearance: none; -moz-appearance: none; -webkit-appearance: none; background: transparent url(../images/down-arrow.png) no-repeat right 5px; border: 0px; font-size: var(--sttl-theme-font-13); cursor: pointer; padding-right: 15px; color: var(--sttl-theme-black); }
+.language select option { color: var(--sttl-theme-gray); }
+.language select:hover, .language select:focus { outline: none; }
+
+.searchBtn { transition: all 0.3s; width: 40px; height: 40px; border: 1px solid var(--sttl-theme-lightgray); color: var(--sttl-theme-orange); display: flex; justify-content: center; align-items: center; border-radius: 50%; text-decoration: none; position: relative; cursor: pointer; }
+.searchBtn:hover, .searchBtn:focus { color: #000;   }
+.searchBox { position: absolute; right: 0; top: 50px; display: flex; padding: 5px; background-color: var(--sttl-theme-orange); display: none; }
+.searchContainer .searchBox:before { -moz-border-bottom-colors: none; -moz-border-left-colors: none; -moz-border-right-colors: none; -moz-border-top-colors: none; border-color: transparent transparent var(--sttl-theme-orange); border-image: none; border-style: solid; border-width: 8px; content: " "; right: 10px; position: absolute; top: -11px; }
+.searchBox input { border: 0px; background-color: var(--sttl-theme-white); outline: none; padding: 0 5px; }
+.searchBox .goBtn { background-color: var(--sttl-theme-black); color: var(--sttl-theme-white); text-transform: uppercase; font-weight: bold; transition: all 0.4s; }
+.searchBoxcover { display: flex; background-color:#F84E33; padding:5px; }
+.searchContainer { position: relative; z-index: 3; }
+
+.redbtn { background-color: var(--sttl-theme-orange); color: var(--sttl-theme-white); text-decoration: none; padding: 10px 25px; height: 40px; display: inline-flex; border-radius: 50px; font-size: var(--sttl-theme-font-14); font-weight: 400; align-items: center; }
+.redbtn:hover, .redbtn:focus { background-color: var(--sttl-theme-black); color: var(--sttl-theme-white); }
+.redbtn .fa-solid { margin: -1px 0 0 10px; }
+
+.headerRowRight {  display: flex;  justify-content: end;  align-items: center;  height: 100%;
+}
+.headerRowRight a {  margin: 0 10px;}
+
+/*responsive css start*/
+@media only screen and (max-width: 1023px) {  
+  .helplineNumber{ display: none; }
+}
+@media only screen and (max-width: 767px) {
+  .leftMenuTop li:nth-child(1){ display: none; }
+.helplineNumber, .rightTopStrip li:nth-child(2), .helplineNumber, .rightTopStrip li:nth-child(3) { display: none; }
+.helplineNumber, .rightTopStrip li:nth-child(1){ display: none; }  
+}  
+
+/*responsive css end*/
+
+</style>
+
+<title>MAJOR PORTS ADJUDICATORY BOARD</title>
+
+</head>
+<body>
+<!--   <noscript class="jsRequired">
+      This page uses Javascript. Your browser either doesn't support Javascript or you have it turned off. To see this page as it is meant to appear please use a Javascript enabled browser.</noscript>
+    <div id="loading">Loading...</div> -->
+<header>
+  <div class="topStrip">
+    <div class="container-xl">
+      <div class="row">
+        <div class="col-md-12 rightTopStrip d-flex justify-content-end" >
+          <ul class="smallFont">
+            <li><a href="#content" class="skipContent">Skip to Main Content</a></li>
+            <li><a href="screen-reader-access.htm">Screen Reader Access</a></li>
+            <li class="fontResize">
+              <div id="accessControl" class="textResizeWrapper">
+                <div class="fontResizeInfo">
+                  <input type="button" name="font_normal" value="A-" id="font_normal" title="Small Font Size" class="fontScaler normal font-normal">
+                  <input type="button" name="font_large" value="A" id="font_large" title="Normal Font Size" class="fontScaler large font-large current">
+                  <input type="button" name="font_larger" value="A+" id="font_larger" title="Larger Font Size" class="fontScaler larger font-larger">
+                </div>
+                <input type="button" name="normal" value="Standard View" id="normal" title="Standard View" class="contrastChanger normal current">
+                <input type="button" name="wob" value="High Contrast View" id="wob" title="High Contrast View" class="contrastChanger wob">
+              </div>
+            </li>
+            <li class="language">
+              <label for="lang" class="d-none">Language</label>
+              <select id="lang">
+                <option>English </option>
+                <option>Marathi </option>
+              </select>
+            </li>
+            <!-- <li><a href="#" title="Login" >Login</a></li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="headerRow">
+    <div class="container-xl">
+      <div class="row">
+        <div class="col-md-5"> <a href="index.html" title="MAJOR PORTS ADJUDICATORY BOARD"> <img src="images/logo.png" alt="MAJOR PORTS ADJUDICATORY BOARD"> </a> </div>
+        <div class="col-md-7">
+          <div class="headerRowRight">
+            <div class="helplineNumber"> 
+              <a href="#"><img src="images/g20-logo.png" alt="g20-logo"></a>
+              <a href="#"><img src="images/sagarmala-logo.png" alt="sagarmala-logo"></a>
+              <a href="#"><img src="images/agadi-logo.png" alt="agadi-logo"></a>
+            </div>
+            <div class="loginregister"> <a href="#" class="redbtn">Login / Register</a> </div>
+            <div class="search-head">
+              <div class="searchContainer">
+                <div class="searchBtn" > <i class="fa-solid fa-magnifying-glass"></i> </div>
+                <div class="searchBox">
+                  <div class="searchBoxcover">
+                    <label for="searchHeader" class=" d-none">search</label>
+                    <input type="text" id="searchHeader">
+                    <button class="goBtn">go</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="emblem-icons">
+              <div class="emblem">
+                <img src="images/emblem_of_India.png" alt="emblem_of_India">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+
+<script>
+
+	//serach button new 
+  if(  $(".searchBtn").length  ){				
+		$(".searchBtn").click( function(){
+			event.stopPropagation();
+			$(".searchBox").slideToggle();
+			$(".searchBtn").toggleClass(active);
+		});
+		}
+
+	$(document).mouseup(function(e){
+	    var container = $(" .searchContainer");
+
+	    // if the target of the click isn't the container nor a descendant of the container
+	    if (!container.is(e.target) && container.has(e.target).length === 0) 
+	    {
+	    	$(".searchBox").hide();
+	    }
+	});
+		
+
+</script>
+
+</body>
+</html>
