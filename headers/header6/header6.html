@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Maharashtra MyGov</title>
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
+
+    <link href="css/bootstrap.css" rel="stylesheet" >    
+    <link href="css/swiper-bundle.min.css" rel="stylesheet" >
+    <link href="css/all.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" >
+    <link href="css/responsive.css" rel="stylesheet" >
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </head>
+
+  <body>
+
+
+    <!--header start-->
+    <section class="header homeBannerBg">
+        <div class="topStrip">
+            <div class="container-xl">
+              <div class="row justify-content-between">
+        
+        
+                <div class="col-auto leftMenuTop mb-lg-0">
+                  <ul>
+                    <li><a href="#" title="Feedback">Feedback</a></li>
+                    <li><a href="#" title="Help">Help</a></li>
+                    <li>
+                        <a href="tel:18001208040" title="call us" class="d-flex">
+                        <span class="fas fa-phone"></span>
+                        <span class="d-none d-md-block ms-2">CM Helpline : 1800 120 8040 (Toll Free)</span>
+                        </a> 
+                      </li>
+                  </ul>
+                </div>
+        
+        
+        
+        
+                <div class="col-auto rightTopStrip d-flex justify-content-start justify-content-md-end">
+                  <ul class="smallFont">
+        
+                 
+                    <li><a href="#">English</a></li>
+                    <li><a href="#">मराठी</a></li>
+                    <li><a href="#">हिन्दी</a></li>
+                   
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--middle row start-->
+          <div class="headerRow">
+            <div class="container-xl">
+              <div class="row">
+             
+             
+             
+                <div class="col-lg-5 justify-content-center justify-content-md-start d-flex mb-3 mb-md-0">
+                  <div class="row">
+                    <div class="col-auto"> <a href="index.html" title="Maharashtra MyGov"> <img src="images/main-logo.png" alt="Maharashtra MyGov"> </a></div>
+                    <div class="col-auto"><a href="index.html" title="DIT Maharashtra"> <img src="images/dit-maharastra.png" alt="DIT Maharashtra"> </a></div>
+                  </div>
+                  
+        
+                   
+                  
+                  </div>
+        
+        
+                <div class="col-lg-7 justify-content-center justify-content-md-end d-flex">
+                  <div class="headerRowRight">
+                    <div class="row">
+                      <div class="departHeader"> 
+                        <ul>
+                          <li>
+        
+                           <select name="Select Department" >
+                            <option value="">Select Department</option>
+                           </select> 
+                          </li>
+                          <li>
+                            <a href="#" title="Trending" class="customIconBtn whiteBg "><span class="trendingIcon btnsIcons"></span>Trending</a>
+                          </li>
+                          <li><a href="#" title="Trending" class="customIconBtn orangeBg "><span class="loginIcon btnsIcons"></span>Login</a></li>
+                          <li>
+                            <a href="#" title="Accessibility " class="accessibilityBtn"><img src="images/icon-accessibility.png" alt="">
+                            </a>
+        
+                            <!--accessibility popup start-->
+                            <div class="accessibility_toolbar">
+                              <a href="#">
+                                <span class="fa fa-universal-access">
+                                  <span class="d-none">No Text</span>
+                                </span>
+                              </a>
+                              <div class="accessibility_toolbar_exapnd">
+                                <div class="accessibility_toolbar_exapnd_wrapper">
+                                  <div class="accessibility_titleBar">
+                                    <a href="#" title="Accessibility" aria-label="Accessibility" class="accessibility_toolbar_close">
+                                      <span class="fa fa-times"><span class="d-none">No Text</span></span>
+                                    </a>
+                                    <span class="accessTitle">Accessibility Menu</span>
+                                  </div>
+                                  <div class="accessibilityDaiictBox" id="accessControl">
+                                    <div class="accessibilityBox">
+                                      <div class="row">
+                                    <div class="col-lg-12 fontResetBtn">
+                                    <a href="javascript:void(0);" class="btn" id="reset">Resise Text</a>
+                                  </div>
+                                        <div class="col-lg-6 col-md-12">
+                                          <div class="accessibilityItem">
+                                            <div class="textResizeWrapper cf">
+                                    <a class="Dark_Contrast" id="darkContrastButton" href="javascript:void(0);" title="Dark Contrast" aria-label="Dark Contrast"> <img src="images/brightness.png" alt="Dark Contrast"> <span class="accissibilityTitle">Dark Contrast</span> </a>
+                                              <!--<label for="normal" class="d-none">Normal</label>
+                            <input type="submit" name="normal" value="Standard View" id="normal"
+                                                title="Standard View" class="contrastChanger normal current" />
+                            <label for="wob" class="d-none">Wob</label>
+                            <input type="submit" name="wob" value="High Contrast View" id="wob"
+                                                title="High Contrast View" class="contrastChanger wob" />
+                            <span>Contrast View</span>-->
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-12">
+                                          <div class="accessibilityItem">
+                                            <a id="invert-images" href="javascript:void(0);" title="Invert" aria-label="Invert">
+                                              <img src="images/invert.svg" alt="Invert">
+                                              <span class="accissibilityTitle">Invert</span>
+                                            </a>
+                                          </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-12">
+                                          <div class="accessibilityItem">
+                                            <a id="saturate-body" href="javascript:void(0);" title="Saturation" aria-label="Saturation">
+                                              <img src="images/saturation.svg" alt="Saturation">
+                                              <span class="accissibilityTitle">Saturation</span>
+                                            </a>
+                                          </div>
+                                        </div>
+                            
+                                        <div class="col-lg-6 col-md-12 d-none">
+                                          <div class="accessibilityItem">
+                                            <div class="textResizeWrapper">
+                                              <label for="font_large" class="d-none">Font Large</label>
+                                              <input type="button" name="font_large" value="A" id="font_large" title="Normal Font Size" class="fontScaler normal font-normal current">
+                            
+                                              <label for="font_larger" class="d-none">Font Larger</label>
+                                              <input type="button" name="font_larger" value="A+" id="font_larger" title="Increase Font Size" class="fontScaler large font-large current">
+                            
+                                              <label for="font_normal" class="d-none">Font Normal</label>
+                                              <input type="button" name="font_normal" value="A++" id="font_normal" title="Increase Font Size" class="fontScaler large font-large current">
+                                            </div>
+                                            <span class="accissibilityTitle">Font Size</span>
+                                          </div>
+                                        </div>
+                                  
+                                  <div class="col-lg-6 col-md-12">
+                              <div class="accessibilityItem"> <a id="increase" href="javascript:void(0);" title="Text Size Increase" aria-label="Text Size Increase"> <img src="images/font-increase.png" alt="Text Size Increase"> <span class="accissibilityTitle">Text Size Increase</span> </a> </div>
+                            </div>
+                            
+                            
+                            <div class="col-lg-6 col-md-12">
+                              <div class="accessibilityItem"> <a id="decrease" href="javascript:void(0);" title="Text Size Decrease" aria-label="Text Size Decrease"> <img src="images/font-decrease.png" alt="Text Size Decrease"> <span class="accissibilityTitle">Text Size Decrease</span> </a> </div>
+                            </div>
+                            
+                            
+                                        <div class="col-lg-6 col-md-12">
+                                          <div class="accessibilityItem">
+                                            <a id="highlight-links" href="javascript:void(0);" title="Highlight Links" aria-label="Highlight Links">
+                                              <img src="images/highlight-link.svg" alt="Highlight Links">
+                                              <span class="accissibilityTitle  hideLinkTitle  linkShowHideText"></span>
+                                            </a>
+                                          </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-12">
+                                          <div class="accessibilityItem">
+                                            <a id="show-image" href="javascript:void(0);" title="Hide Images" aria-label="Hide Images">
+                                              <img src="images/hide-image.svg" alt="Hide Images">
+                                              <span class="accissibilityTitle hideImgTitle imgShowHideText"></span>
+                                            </a>
+                                          </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-12">
+                                          <div class="accessibilityItem">
+                                            <a class="cursor" href="javascript:void(0);" title="Increase Cursor" aria-label="Increase Cursor">
+                                              <img src="images/Cursor.svg" alt="Increase Cursor">
+                                              <span class="accissibilityTitle cursor">Increase Cursor</span>
+                                            </a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+           <!--accessibility popup end-->
+        
+                          </li>
+                        
+                          <li>
+                            <a href="#" class="secondMenuBtn menuToggle" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">
+                              <img src="images/menu-icon.png" alt="" >
+                            </a>
+                       
+                     <!--second menu start-->
+
+                     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">
+                      <div class="offcanvas-header">
+                        <h5 class="offcanvas-title">My Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+
+                      </div>
+                      <div class="offcanvas-body">
+                        <div class="mainMenuContainerWrap">
+                          <div class="mainMenuContainer">
+                             
+                              <ul id="mainNavigationa" class="mainNavigationa">   
+                              
+                              <li><a href="/home">Home </a></li>
+                            
+                            
+                              <li class="parent"><a href="/participate">Participate</a>
+                                  <ul class="sub-menu">                                 
+                                    
+                                                    
+                                        
+                                      <li><a href="/creative-corner">Creative Corner</a></li>
+                                      
+                                                  
+                                                    
+                                        
+                                      <li><a href="/category/categorylist">Groups</a></li>
+                                      
+                                      
+                                        
+                                      <li><a href="/public/quiz/management">Quiz</a></li>
+                                      
+                                  
+                                      <li><a href="/talklist">Talk</a></li>
+                                      
+                                                
+                                  
+                                  </ul>
+                               <i class="menuMobIcon fa fa-angle-down">&nbsp;</i></li>
+                            
+                          
+                            
+                              <li class="parent"><a href="/activities">Activities</a>
+                                  <ul class="sub-menu">
+                                  
+                                    
+                                                    
+                                                          
+                                      <li><a href="#" onclick="menulistCall('/initiatives/all/0/all/sort')">Initiatives</a></li>
+                                      
+                                  
+                                                      
+                                  
+                                    
+                                                    
+                                        
+                                      <li><a href="/suggestionlist">Suggestions</a></li>
+                                      
+                                  
+                                                      
+                                  
+                                    
+                                                    
+                                        
+                                      <li><a href="/disc/discusslist">Discuss</a></li>
+                                      
+                                  
+                                                      
+                                  
+                                    
+                                                    
+                                        
+                                      <li><a href="/public/poll/management">Poll</a></li>
+                                      
+                                  
+                                                      
+                                  
+                                    
+                                                    
+                                        
+                                      <li><a href="/blog">Blog</a></li>
+                                      
+                                  
+                                                      
+                                  
+                                  </ul>
+                               <i class="menuMobIcon fa fa-angle-down">&nbsp;</i></li>
+                            
+                          
+                        
+                          
+                            
+                            
+                              <li class="parent"><a href="/media">Media</a>
+                                  <ul class="sub-menu">
+                                  
+                                    
+                                                    
+                                        
+                                      <li><a href="/public/mediacoverage">Media Coverage</a></li>
+                                      
+                                  
+                                                      
+                                  
+                                    
+                                                    
+                                        
+                                      <li><a href="/pressrelease">Press Releases</a></li>
+                                      
+                                  
+                                                      
+                                  
+                                    
+                                                    
+                                        
+                                      <li><a href="/news">News</a></li>
+                                      
+                                  
+                                                      
+                                  
+                                    
+                                                    
+                                        
+                                      <li><a href="/photogallery">Photo Gallery</a></li>
+                                      
+                                  
+                                                      
+                                  
+                                    
+                                                    
+                                        
+                                      <li><a href="/videogallery">Video  Gallery</a></li>
+                                      
+                                  
+                                                      
+                                  
+                                  </ul>
+                               <i class="menuMobIcon fa fa-angle-down">&nbsp;</i></li>
+                            
+                          
+                        
+                          
+                            
+                              
+                              <li><a href="/connectives">Connectives </a></li>
+                            
+                            
+                          
+                        
+                          
+                            
+                              
+                              <li><a href="/faqs">Faqs </a></li>
+                            
+                            
+                          
+                        
+                      <li class="hdrTrendingLkn"><a class="button" href="/trending"><span class="trendingIcon sprite"></span>Trending</a></li></ul>
+                          </div>
+                          <div class="footerLinks cf">
+                         
+                          <ul>
+                            <li><a href=" /signup">Register/My Profile</a></li>
+                            <li><a href="/public/sitemap">Sitemap</a></li>
+                            
+                              
+                            
+                              
+                              <li><a href="/hyperlinkingpolicy">Hyperlinking Policy</a></li>
+                              
+                            
+                              
+                              <li><a href="/termsconditions">Terms And Conditions</a></li>
+                              
+                            
+                              
+                              <li><a href="/copyrightpolicies">Copyright Policies</a></li>
+                              
+                                  
+                          <li class="screenRdAcc"><a href="/screen-reader-access">Screen Reader Access</a></li></ul>
+                          <ul>
+                            <li><a href="/announcement">Announcements</a></li>
+                            
+                              
+                              <li><a href="/privacypolicy">Privacy Policy</a></li>
+                              
+                            
+                              
+                              <li><a href="/help">Help</a></li>
+                              
+                            
+                              
+                              <li><a href="/contact">Contact</a></li>
+                              
+                            
+                              
+                              <li><a href="/publicfeedback">Feedback</a></li>
+                              
+                            
+                              
+                                  
+                          </ul>
+                          </div>
+                          </div>
+                      </div>
+                    </div>
+
+               
+                     <!--second menu end-->
+        
+        
+                          </li>
+                        </ul>
+                      </div>            
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--middle row end-->
+
+
+    </section>
+    <!--header end-->
+
+
+
+
+    
+  <script src="js/functions.js"></script>
+  <script src="js/general.js"></script>  
+
+
+
+  </body>
+
+
+</html>

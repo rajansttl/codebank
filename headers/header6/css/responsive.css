@@ -1,0 +1,27 @@
+
+
+
+@media(max-width:767px){
+ 
+    :root{
+    --fontsize1: 1em;/*14px*/
+    --fontsize2: 1.2em;/*16px*/
+    --fontsize3: 1.3em;/*20px*/
+    --fontsize4: 1.4em;/*24px*/
+    }
+    .homeBannerCont { position: static; background: var(--black-color);}
+    .homeBannerWrap .swiper-pagination {
+        width: 20px;
+        right:20px;
+        left: auto;
+        width: 20px;
+        top:50px; transform: none;
+        bottom: auto;
+      }
+      .departHeader ul li { margin-bottom: 10px;}
+      .departHeader ul li:nth-child(2),
+      .accessibilityBtn { display: none;}
+
+      .homeBannerCont { font-size: 14px;}
+     
+}
